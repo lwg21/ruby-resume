@@ -1,6 +1,5 @@
 require 'yaml'
 require 'erb'
-require 'webrick'
 
 # render method similar to Rails for partials
 def render(partial, locals = {})
@@ -10,7 +9,7 @@ end
 
 # Read templates and data
 layout = File.read("views/layout.html.erb")
-view = File.read("views/view.html.erb")
+view = File.read("views/resume.html.erb")
 data = YAML.load_file('data.yml')
 
 # Hydrate the ERB template and insert the view in the layout
