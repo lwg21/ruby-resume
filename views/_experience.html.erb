@@ -1,6 +1,13 @@
 <div>
-  <div class="flex-between">
-    <div><strong><%= experience["company"] %></strong></div>
+  <div class="flex-between mb-2">
+    <div><strong><%= experience["company"] %></strong>, <%= experience["position"] %></div>
     <div><%= experience["date"] %></div>
   </div>
+  <% if experience["tasks"] %>
+      <ul>
+        <% experience["tasks"].each do %>
+          <li class="smaller"><%= _1 %></li>
+        <% end %>
+      </ul>
+  <% end %>
 </div>

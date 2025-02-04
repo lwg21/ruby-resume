@@ -7,9 +7,15 @@ def render(partial, locals = {})
   ERB.new(template).result_with_hash(locals)
 end
 
+def svg_tag(file, options = {})
+  svg_content = File.read("assets/#{file}.svg")
+  attributes = options.map { |key, value| %(#{key}="#{value}") }.join(" ")
+  svg_content.sub!("<svg", "<svg #{attributes}")
+end
+
 # Read templates and data
 layout = File.read("views/layout.html.erb")
-view = File.read("views/resume.html.erb")
+view = File.read("views/view.html.erb")
 data = YAML.load_file('data.yml')
 
 # Hydrate the ERB template and insert the view in the layout
