@@ -1,8 +1,7 @@
-## A web dev CV/resume builder in Ruby
+A minimal static resume builder for Rubyists who enjoy writing code rather than pushing boxes around. I built this after growing frustrated with previous attempts using Word, Pages, PowerPoint, Canva, Figma, InDesign…
 
-- A minimal resume builder focused on maintainability and control over the design.
 - YAML to store the data, HTML and CSS to structure and style the template, Ruby to hydrate it.
-- Templating syntax inspired by Rails for familiarity (ERB, layout/views/partials organisation, `render` method for partials and `_tag` helpers).
+- Templating syntax inspired by Rails for familiarity (ERB, layout/views/partials organisation, `render` method and `_tag` helpers).
 - No dependencies beyond Ruby (YAML and ERB are part of the standard library)
 
 ## Getting started
