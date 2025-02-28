@@ -1,4 +1,4 @@
-## A web dev CV/resume builder
+## A web dev CV/resume builder in Ruby
 
 - A minimal resume builder focused on maintainability and control over the design.
 - YAML to store the data, HTML and CSS to structure and style the template, Ruby to hydrate it.
