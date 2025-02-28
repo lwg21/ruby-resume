@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
-/* * {
-  border: 1px solid red;
-} */
+/* Style your resume here (from scratch or using the code below) */
 
 :root {
   --space-0: 0rem;
@@ -13,8 +9,6 @@
   --space-5: 2rem;
   --space-6: 3rem;
   --page-margin-x: 4rem;
-  --color-accent: #1425d5;
-  --color-accent-light: #2f367f;
 }
 
 .mb-0 { margin-bottom: var(--space-0); }
@@ -27,9 +21,10 @@
 
 body {
   margin: 0;
-  font-family: "Spectral", serif;
+  font-family: "Times", serif;
   font-weight: 300;
   font-style: normal;
+  font-size: 1.1rem;
 }
 
 #page {
@@ -39,16 +34,7 @@ body {
 }
 
 header {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: var(--page-margin-x);
-  padding-right: var(--page-margin-x);
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 6fr 4fr;
-  gap: 40px;
+  padding: var(--page-margin-x);
 }
 
 .wrap {
@@ -62,22 +48,17 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin: 0;
 }
 
 h3 {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin: 0;
 }
 
 section {
-  margin-bottom: 1rem;
-}
-
-.icon {
-  height: 20px;
-  padding-bottom: 4px;
+  margin-bottom: var(--space-3);
 }
 
 .title {
@@ -109,31 +90,6 @@ section {
 ul {
   padding-inline-start: 20px;
   margin-block-start: 0px;
-  list-style-type: circle;
-}
-
-ul li::marker {
-  font-size: 0.8rem;
-}
-
-.faded {
-  opacity: 0.35;
-}
-
-.small {
-  font-size: small;
-}
-
-.smaller {
-  font-size: smaller;
-}
-
-.large {
-  font-size: large;
-}
-
-.larger {
-  font-size: larger;
 }
 
 .links {
@@ -167,12 +123,4 @@ ul li::marker {
 
 .flex {
   display: flex;
-}
-
-.accent {
-  color: var(--color-accent);
-}
-
-.accent-light {
-  color: var(--color-accent-light);
 }

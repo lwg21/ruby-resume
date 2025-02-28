@@ -1,21 +1,17 @@
+<!-- Build your resume here (from scratch or using the code below) -->
+
 <div id="page">
   <%= render "header", data %>
   <div class="container wrap">
     <main>
       <section>
-        <%= render "title", title: "Experience", icon: "briefcase" %>
-        <% experiences.reject { _1["employment"] == 'internship' }.each do %>
+        <%= render "title", title: "Experience" %>
+        <% experiences.each do %>
           <%= render "experience", experience: _1 %>
         <% end %>
-        <div class="mb-2"><strong>Internships</strong></div>
-        <ul>
-          <% experiences.select { _1["employment"] == 'internship' }.each do %>
-            <li class"smaller"><%= render "internship", experience: _1 %></li>
-          <% end %>
-        </ul>
       </section>
       <section>
-        <%= render "title", title: "Education", icon: "school" %>
+        <%= render "title", title: "Education" %>
         <% education.each do %>
           <%= render "education", education: _1 %>
         <% end %>
@@ -23,36 +19,28 @@
     </main>
     <aside class="flex-column-between">
       <section>
-        <%= render "title", title: "Training", icon: "code" %>
-        <% training.each do %>
-          <%= render "education", education: _1 %>
-        <% end %>
-      </section>
-      <section>
-        <%= render "title", title: "Skills & Tools", icon: "tools" %>
+        <%= render "title", title: "Skills & Tools" %>
         <div>
           <% skills.each do |k, v| %>
             <div class="mb-2">
-              <div><strong class="smaller"><%= k %></strong></div>
+              <div><strong><%= k %></strong></div>
               <div><%= v.join(", ") %></div>
             </div>
           <% end %>
         </div>
       </section>
       <section>
-        <%= render "title", title: "Languages", icon: "language" %>
-          <ul>
+        <%= render "title", title: "Languages" %>
+          <div>
             <% languages.each do %>
-              <li>
-                <div><strong><%= _1["name"] %></strong> <%= _1["fluency"] %></div>
-                <div class="smaller"> <%= _1["details"] %></div>
-              </li>
+              <div><strong><%= _1["name"] %></strong> <%= _1["fluency"] %></div>
+              <div> <%= _1["details"] %></div>
             <% end %>
-          </ul>
+          </div>
       </section>
       <section>
-        <%= render "title", title: "Interests", icon: "palette" %>
-        <div class="smaller"><%= interests.join(", ") %></div>
+        <%= render "title", title: "Interests" %>
+        <div><%= interests.join(", ") %></div>
       </section>
     </aside>
   </div>

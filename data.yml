@@ -1,0 +1,91 @@
+name: John Doe
+title: Junior Software Engineer
+location: San Francisco, CA, USA
+
+contact:
+  email: johndoe@example.com
+  phone: +1 234 567 8901
+  linkedin: johndoe
+  github: johndoe
+  website: johndoe.dev
+
+summary: >
+  Enthusiastic and detail-oriented Junior Software Engineer with a passion for building scalable applications.
+  Proficient in full-stack development with a strong foundation in software engineering principles.
+  Adept at collaborating with cross-functional teams to deliver high-quality solutions.
+
+experiences:
+  - company: Tech Innovations Inc.
+    position: Software Engineer Intern
+    location: San Francisco, CA
+    employment: Internship
+    detail: Contributed to backend API development and improved database query efficiency.
+    date: 2023
+    tasks:
+      - Developed RESTful APIs using Node.js and Express.
+      - Optimized SQL queries, reducing response times by 30%.
+      - Assisted in writing unit and integration tests.
+      - Participated in daily standups and sprint planning meetings.
+
+  - company: CodeCrafters
+    position: Open Source Contributor
+    location: Remote
+    employment: Volunteer
+    detail: Contributed to open-source projects, improving documentation and fixing bugs.
+    date: 2023-24
+    tasks:
+      - Fixed UI bugs in React components.
+      - Improved API documentation for a Python-based project.
+      - Reviewed and tested pull requests from other contributors.
+
+training:
+  - school: Codecademy
+    location: Online
+    duration: 6 months
+    date: 2023
+    degrees:
+      - Full-Stack Engineer Career Path Certificate
+
+education:
+  - school: University of California, Berkeley
+    location: Berkeley, CA
+    college: College of Engineering
+    date: 2019 - 2023
+    degrees:
+      - Bachelor of Science in Computer Science
+
+languages:
+  - name: English
+    fluency: Native
+    details: Fluent in reading, writing, and speaking.
+  - name: Spanish
+    fluency: Intermediate
+    details: Conversational fluency and basic technical communication.
+
+skills:
+  "Programming languages":
+    - JavaScript
+    - Python
+    - Java
+    - SQL
+  "Frameworks & libraries":
+    - React.js
+    - Express.js
+    - Django
+    - Spring Boot
+  "Tools & services":
+    - Git
+    - Docker
+    - AWS
+    - PostgreSQL
+  "Other skills":
+    - Agile methodologies
+    - Unit testing
+    - Debugging
+    - Technical documentation
+
+interests:
+  - Open-source contribution
+  - AI & machine learning
+  - Game development
+  - Cybersecurity
