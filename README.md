@@ -8,8 +8,8 @@
 ## Getting started
 
 - Install [Ruby](https://ruby-doc.org/) (for example using [rbenv](https://github.com/rbenv/rbenv)).
-- Write the data of your CV in the `data.yml` (using your own preferred structure).
-- Write the HTML in the `layout.erb.html` and `view.html.erb`.
+- Write the data of your CV in a `data.yml` file at the root the project.
+- Write the HTML in the `layout.erb.html` and `view.html.erb`. You can use ERB syntax `<%= %>` to render the data using the same keys as in `data.yml`.
 - Style it with CSS using the `public/style.css` file.
 - Run `ruby resume.rb` to build the resume as a static `public/index.html` file.
 -  You can serve this file to see it in the browser.  For this purpose I use `ruby -run -e httpd ./public -p 8000` (requires the [WEBrick](https://github.com/ruby/webrick) gem).
