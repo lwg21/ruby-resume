@@ -2,8 +2,12 @@
   <h1 class="accent"><%= name %></h1>
   <h2 class="accent"><%= title %></h2>
   <div class="links mb-2">
-    <%= render "link", text: contact["email"], icon: "mail", url: "" %>
-    <%= render "link", text: contact["website"], icon: "world", url: "https://lwg.me/" %>
+    <%#= render "link", text: contact["email"], icon: "mail", url: "" %>
+    <div class="link accent">
+      <%= svg_tag "mail", class: "accent" %>
+      <div><%= contact["email"] %></div>
+    </div>
+    <%#= render "link", text: contact["website"], icon: "world", url: "https://lwg.me/" %>
     <%= render "link", text: contact["github"], icon: "github", url: "https://github.com/lwg21/" %>
     <%= render "link", text: contact["linkedin"], icon: "linkedin", url: "https://www.linkedin.com/in/lucas-gruner/" %>
   </div>
