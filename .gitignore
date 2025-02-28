@@ -1,3 +1,5 @@
-data.yml
-public/index.html
+public/
+node_modules/
 *.svg
+Gemfile.lock
+package-lock.json
