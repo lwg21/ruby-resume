@@ -15,7 +15,7 @@ summary: >
   Adept at collaborating with cross-functional teams to deliver high-quality solutions.
 
 experiences:
-  - company: Tech Innovations Inc.
+  - company: Tech Innovations
     position: Software Engineer Intern
     location: San Francisco, CA
     employment: Internship
@@ -38,28 +38,18 @@ experiences:
       - Improved API documentation for a Python-based project.
       - Reviewed and tested pull requests from other contributors.
 
-training:
-  - school: Codecademy
-    location: Online
-    duration: 6 months
-    date: 2023
-    degrees:
-      - Full-Stack Engineer Career Path Certificate
-
 education:
   - school: University of California, Berkeley
     location: Berkeley, CA
-    college: College of Engineering
     date: 2019 - 2023
-    degrees:
-      - Bachelor of Science in Computer Science
+    degree: Bachelor of Science in Computer Science
 
 languages:
   - name: English
-    fluency: Native
+    fluency: native
     details: Fluent in reading, writing, and speaking.
   - name: Spanish
-    fluency: Intermediate
+    fluency: intermediate
     details: Conversational fluency and basic technical communication.
 
 skills:

@@ -11,14 +11,6 @@
   --page-margin-x: 4rem;
 }
 
-.mb-0 { margin-bottom: var(--space-0); }
-.mb-1 { margin-bottom: var(--space-1); }
-.mb-2 { margin-bottom: var(--space-2); }
-.mb-3 { margin-bottom: var(--space-3); }
-.mb-4 { margin-bottom: var(--space-4); }
-.mb-5 { margin-bottom: var(--space-5); }
-.mb-6 { margin-bottom: var(--space-6); }
-
 body {
   margin: 0;
   font-family: "Times", serif;
@@ -27,6 +19,14 @@ body {
   font-size: 1.1rem;
 }
 
+.mb-0 { margin-bottom: var(--space-0); }
+.mb-1 { margin-bottom: var(--space-1); }
+.mb-2 { margin-bottom: var(--space-2); }
+.mb-3 { margin-bottom: var(--space-3); }
+.mb-4 { margin-bottom: var(--space-4); }
+.mb-5 { margin-bottom: var(--space-5); }
+.mb-6 { margin-bottom: var(--space-6); }
+
 #page {
   background-color: hsl(42, 100%, 95%);
   width: 210mm;
@@ -34,7 +34,10 @@ body {
 }
 
 header {
-  padding: var(--page-margin-x);
+  padding-top: var(--page-margin-x);
+  padding-bottom: var(--space-6);
+  padding-left: var(--page-margin-x);
+  padding-right: var(--space-margin-x);
 }
 
 .wrap {
@@ -49,7 +52,7 @@ h1 {
 
 h2 {
   font-size: 1.4rem;
-  margin: 0;
+  margin-bottom: var(--space-2);
 }
 
 h3 {
@@ -65,7 +68,7 @@ section {
   display: flex;
   align-items: center;
   gap: 7px;
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-3);
   border-bottom: 1px solid rgb(100, 100, 100);
 }
 
@@ -76,10 +79,6 @@ section {
 
 .item-header>div:last-child {
   text-align: right;
-}
-
-.summary {
-  text-align: justify;
 }
 
 .flex-between {

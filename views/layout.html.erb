@@ -3,9 +3,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume</title>
-  <% if generate_pdf %>
+  <% if embed_css %>
+    <%# embedded CSS (needed for PDF generation) %>
     <style><%= style %></style>
   <% else %>
+    <%# linked CSS (easier while developing) %>
     <link rel="stylesheet" href="style.css">
   <% end %>
 </head>

@@ -1,19 +1,49 @@
-<!-- Build your resume here (from scratch or using the code below) -->
+<%# Build your resume here (from scratch or using the code below) %>
 
 <div id="page">
-  <%= render "header", data %>
+  <header>
+    <h1 class="mb-3"><%= name %></h1>
+    <h2 class="mb-2"><%= title %></h2>
+    <div class="links">
+      <div class="link">
+        <%= svg_tag "mail" %>
+        <div><%= contact["email"] %></div>
+      </div>
+      <%= render "link", text: contact["website"], icon: "world", url: "https://#{contact['website']}/" %>
+      <%= render "link", text: contact["github"], icon: "github", url: "https://github.com/#{contact['github']}/" %>
+      <%= render "link", text: contact["linkedin"], icon: "linkedin", url: "https://www.linkedin.com/in/#{contact['linkedin']}/" %>
+    </div>
+  </header>
   <div class="container wrap">
     <main>
       <section>
         <%= render "title", title: "Experience" %>
-        <% experiences.each do %>
-          <%= render "experience", experience: _1 %>
+        <% experiences.each do |experience| %>
+          <div>
+            <div class="flex-between mb-2">
+              <div><strong><%= experience["company"] %></strong>, <%= experience["position"] %></div>
+              <div><%= experience["date"] %></div>
+            </div>
+            <% if experience["tasks"] %>
+                <ul>
+                  <% experience["tasks"].each do |task| %>
+                    <li><%= task %></li>
+                  <% end %>
+                </ul>
+            <% end %>
+          </div>
         <% end %>
       </section>
       <section>
         <%= render "title", title: "Education" %>
-        <% education.each do %>
-          <%= render "education", education: _1 %>
+        <% education.each do |edu| %>
+          <div class="mb-1">
+            <div class="flex-between">
+              <div class="mb-1"><strong><%= edu["school"] %></strong></div>
+              <div><%= edu["date"] %></div>
+            </div>
+            <div><%= edu["degree"] %></div>
+          </div>
         <% end %>
       </section>
     </main>
@@ -23,7 +53,7 @@
         <div>
           <% skills.each do |k, v| %>
             <div class="mb-2">
-              <div><strong><%= k %></strong></div>
+              <div class="mb-1"><strong><%= k %></strong></div>
               <div><%= v.join(", ") %></div>
             </div>
           <% end %>
@@ -32,9 +62,8 @@
       <section>
         <%= render "title", title: "Languages" %>
           <div>
-            <% languages.each do %>
-              <div><strong><%= _1["name"] %></strong> <%= _1["fluency"] %></div>
-              <div> <%= _1["details"] %></div>
+            <% languages.each do |lang| %>
+              <div class="mb-1"><strong><%= lang["name"] %></strong> (<%= lang["fluency"] %>) – <%= lang["details"] %></div>
             <% end %>
           </div>
       </section>
