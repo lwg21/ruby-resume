@@ -9,6 +9,7 @@
   --space-5: 2rem;
   --space-6: 3rem;
   --page-margin-x: 4rem;
+  --background-color: hsl(42, 100%, 95%);
 }
 
 body {
@@ -28,7 +29,7 @@ body {
 .mb-6 { margin-bottom: var(--space-6); }
 
 #page {
-  background-color: hsl(42, 100%, 95%);
+  background-color: var(--background-color);
   width: 210mm;
   height: 297mm;
 }
@@ -72,17 +73,14 @@ section {
   border-bottom: 1px solid rgb(100, 100, 100);
 }
 
-.item-header {
-  display: grid;
-  grid-template-columns: 8fr 1fr;
-}
-
-.item-header>div:last-child {
-  text-align: right;
-}
-
 .flex-between {
   display: flex;
+  justify-content: space-between;
+}
+
+.flex-column-between {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -108,18 +106,4 @@ ul {
     height: 14px;
     padding-bottom: 1px;
   }
-}
-
-.align-right {
-  text-align: right;
-}
-
-.flex-column-between {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.flex {
-  display: flex;
 }
