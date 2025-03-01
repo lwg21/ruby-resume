@@ -5,8 +5,8 @@ ERB.new(template).result_with_hash(locals)
 end
 
 # Render an SVG file
-def svg_tag(file, options = {})
+def svg_tag(file, attributes = {})
   svg_content = File.read("assets/#{file}.svg")
-  attributes = options.map { |key, value| %(#{key}="#{value}") }.join(" ")
-  svg_content.sub!("<svg", "<svg #{attributes}")
+  attributes_string = attributes.map { |key, value| %(#{key}="#{value}") }.join(" ")
+  svg_content.sub!("<svg", "<svg #{attributes_string}")
 end
