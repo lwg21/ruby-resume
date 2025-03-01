@@ -1,6 +1,5 @@
 public/*.html
 public/*.pdf
 node_modules/
-*.svg
 Gemfile.lock
 package-lock.json
